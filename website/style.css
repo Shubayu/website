@@ -1,0 +1,772 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'super-snack'; 
+    src: url('super_snack/Super\ Snack\ Personal\ Use.ttf') format('woff2'),
+}
+
+@keyframes wave {
+    0% {
+        color: rgb(255, 214, 255); 
+    }
+    25% {
+        color: rgb(253, 206, 255); 
+    }
+    50% {
+        color: rgb(245, 183, 255);
+    }
+    75% {
+        color: rgb(240, 165, 255); 
+    }
+    100% {
+        color: rgb(252, 215, 255); 
+    }
+}
+@keyframes scrollStars {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header
+{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 27px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo
+{
+    position: relative;
+    left: -30px;
+}
+header .logo-text
+{
+    font-size: 2.2em;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover
+{
+    background: rgba(177, 236, 254, 0.4);
+    color: #2b1055;
+}
+
+.list
+{
+    display: flex;
+    justify-content: space-between;   
+}
+.list-items a
+{
+    color: rgba(177, 236, 254, 1.0);
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    transition: 0.4s;
+}
+.list-items a:hover
+{
+    color: rgba(177, 236, 254, 1.0);
+    animation: wave 2s linear infinite; 
+}
+/* SECTION 3 */
+.section3
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(255, 177, 188), rgba(248, 247, 247, 1));
+    align-items: center;
+}
+.section3::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+}
+.section3 img#juwa2
+{
+    position: absolute;
+    top: -600px;
+    left: 1600px;
+    transform: scale(1);
+    white-space: nowrap;
+    z-index: 5;
+}
+.section3 img#shu2
+{
+    position: absolute;
+    top: -640px;
+    left: -770px;
+    transform: scale(0.8);
+    white-space: nowrap;
+    z-index: 5;
+}
+.movingStar
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: scrollStars 20s linear infinite;
+}
+#stars3 
+{
+    left: 0; 
+}
+
+#stars4 
+{
+    left: -100%; 
+}
+
+#back-to-top-button 
+{
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    opacity: 1;
+    color: #B1ECFE;
+    font-size: 1.5em;
+    z-index: 1000;
+    transform: translateY(380px);
+}
+  
+#back-to-top-button:hover 
+{
+    background-color: #f8e1ff;
+}
+
+/* SECTION 2 */
+.section2 
+{
+    
+    height: calc(100vh - 8vh);
+    width: 600px;
+    top:0;
+    left:0;
+    z-index: -1;
+    
+}
+
+.section1
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #f7f7f7, transparent);
+    z-index: 1000;
+}
+.section1 img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#text
+{
+    position: absolute;
+    top: -100px;
+    -webkit-text-stroke: 0.5px black;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    animation: wave 2s linear infinite; 
+    font-family: "super-snack";
+    z-index: 9;
+
+}
+section img#juwa
+{
+    position: absolute;
+    top: -140px;
+    left: -1100px;
+    transform: scale(0.5);
+    white-space: nowrap;
+    z-index: 5;
+}
+section img#shu
+{
+    position: absolute;
+    top: -150px;
+    left: 1200px;
+    transform: scale(0.45);
+    white-space: nowrap;
+    z-index: 5;
+}
+.scrolling-stars
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    animation: scrollStars 20s linear infinite;
+}
+#stars1 {
+    left: 0; 
+}
+
+#stars2 {
+    left: -100%; 
+}
+
+.arrow,
+.arrow2 {
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    background-color: #ffb2ec; 
+    opacity: 0.5;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    animation: bounce 1s infinite;
+    z-index: 1006;
+}
+
+.arrow {
+    left: 50%; 
+    bottom: 40px; 
+}
+
+.arrow2 {
+    left: 43%; 
+    bottom: 40px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  body {
+    font-size: 16px; /* Adjust font size for better readability */
+  }
+
+  header {
+    padding: 15px 20px; /* Reduce header padding for smaller screens */
+  }@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'super-snack'; 
+    src: url('super_snack/Super\ Snack\ Personal\ Use.ttf') format('woff2'),
+}
+
+@keyframes wave {
+    0% {
+        color: rgb(255, 214, 255); 
+    }
+    25% {
+        color: rgb(253, 206, 255); 
+    }
+    50% {
+        color: rgb(245, 183, 255);
+    }
+    75% {
+        color: rgb(240, 165, 255); 
+    }
+    100% {
+        color: rgb(252, 215, 255); 
+    }
+}
+@keyframes scrollStars {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header
+{
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 27px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo
+{
+    position: relative;
+    left: -30px;
+}
+header .logo-text
+{
+    font-size: 2.2em;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover
+{
+    background: rgba(177, 236, 254, 0.4);
+    color: #2b1055;
+}
+
+.list
+{
+    display: flex;
+    justify-content: space-between;   
+}
+.list-items a
+{
+    color: rgba(177, 236, 254, 1.0);
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    transition: 0.4s;
+}
+.list-items a:hover
+{
+    color: rgba(177, 236, 254, 1.0);
+    animation: wave 2s linear infinite; 
+}
+/* SECTION 3 */
+.section3
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(255, 177, 188), rgba(248, 247, 247, 1));
+    align-items: center;
+}
+.section3::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+}
+.section3 img#juwa2
+{
+    position: absolute;
+    top: -600px;
+    left: 1600px;
+    transform: scale(1);
+    white-space: nowrap;
+    z-index: 5;
+}
+.section3 img#shu2
+{
+    position: absolute;
+    top: -640px;
+    left: -770px;
+    transform: scale(0.8);
+    white-space: nowrap;
+    z-index: 5;
+}
+.movingStar
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: scrollStars 20s linear infinite;
+}
+#stars3 
+{
+    left: 0; 
+}
+
+#stars4 
+{
+    left: -100%; 
+}
+
+#back-to-top-button 
+{
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    opacity: 1;
+    color: #B1ECFE;
+    font-size: 1.5em;
+    z-index: 1000;
+    transform: translateY(380px);
+}
+  
+#back-to-top-button:hover 
+{
+    background-color: #f8e1ff;
+}
+
+/* SECTION 2 */
+.section2 
+{
+    
+    height: calc(100vh - 8vh);
+    width: 600px;
+    top:0;
+    left:0;
+    z-index: -1;
+    
+}
+
+.section1
+{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #f7f7f7, transparent);
+    z-index: 1000;
+}
+.section1 img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#text
+{
+    position: absolute;
+    top: -100px;
+    -webkit-text-stroke: 0.5px black;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    animation: wave 2s linear infinite; 
+    font-family: "super-snack";
+    z-index: 9;
+
+}
+section img#juwa
+{
+    position: absolute;
+    top: -140px;
+    left: -1100px;
+    transform: scale(0.5);
+    white-space: nowrap;
+    z-index: 5;
+}
+section img#shu
+{
+    position: absolute;
+    top: -150px;
+    left: 1200px;
+    transform: scale(0.45);
+    white-space: nowrap;
+    z-index: 5;
+}
+.scrolling-stars
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    animation: scrollStars 20s linear infinite;
+}
+#stars1 {
+    left: 0; 
+}
+
+#stars2 {
+    left: -100%; 
+}
+
+.arrow,
+.arrow2 {
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    background-color: #ffb2ec; 
+    opacity: 0.5;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    animation: bounce 1s infinite;
+    z-index: 1006;
+}
+
+.arrow {
+    left: 50%; 
+    bottom: 40px; 
+}
+
+.arrow2 {
+    left: 43%; 
+    bottom: 40px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+ 
+
+  body {
+    font-size: 16px; 
+  }
+
+  header {
+    padding: 15px 20px;
+  }
+
+  header .logo-text {
+    font-size: 1.5em;
+  }
+
+  header ul {
+    flex-direction: column; 
+    align-items: flex-start;
+    margin-top: 15px; 
+  }
+
+  header ul li {
+    margin-left: 0; 
+  }
+
+  header ul li a {
+    font-size: 1.2em; 
+    padding: 10px 20px; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .list-items a {
+    font-size: 1.2em; 
+  }
+
+  .section3 {
+    padding: 50px; 
+  }
+
+  .section1 {
+    padding: 50px; 
+  }
+
+  #text {
+    font-size: 4em; 
+  }
+
+  section img#juwa,
+  section img#shu {
+    display: none;
+  }
+
+  
+}
+
+
+  header .logo-text {
+    font-size: 1.5em; /* Reduce logo text size */
+  }
+
+  header ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: flex-start;
+    margin-top: 15px; /* Add some spacing between links */
+  }
+
+  header ul li {
+    margin-left: 0; /* Reset margin for list items */
+  }
+
+  header ul li a {
+    font-size: 1.2em; /* Adjust link font size */
+    padding: 10px 20px; /* Increase link padding for touch */
+    border-radius: 10px; /* Rounded corners for links */
+    margin-bottom: 10px; /* Add space between links */
+  }
+
+  .list-items a {
+    font-size: 1.2em; /* Adjust font size for better readability */
+  }
+
+  .section3 {
+    padding: 50px; /* Reduce padding for smaller screens */
+  }
+
+  .section1 {
+    padding: 50px; /* Reduce padding for smaller screens */
+  }
+
+  #text {
+    font-size: 4em; /* Adjust text size */
+  }
+
+  section img#juwa,
+  section img#shu {
+    display: none; /* Hide large images on smaller screens */
+  }
+
+  /* Adjust any other styles as needed */
+}

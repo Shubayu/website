@@ -1,0 +1,256 @@
+/* Gallery container */
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-row-gap: 90px;
+    
+    grid-template-areas:
+     "gallery-p gallery-p gallery-p gallery-p"
+     "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+     
+     "img1 img2 img3 img4"
+     "img5 img6 img7 img8"
+     "img9 img10 img11 img12";
+}
+
+#gallery .gallery-img {
+    width: 90%;
+    height: 300px;
+    margin-left: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100px;
+    cursor: pointer;
+    z-index: 1002;
+    
+}
+
+.section2 {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgb(255, 177, 188), rgba(248, 247, 247, 1));
+    top:0;
+    left:0;
+    z-index: -1;
+    padding-bottom: 100px;
+}
+
+/* Images */
+
+#gallery p {
+    grid-area: gallery-p;
+  
+    
+}
+
+#gallery h2 {
+    grid-area: gallery-h2;
+    
+    
+}
+
+
+
+#gallery .shububb {
+    grid-area: img1;
+    background-image: url("img/img1.jpg")
+    
+}
+
+#gallery .ShuJuwa {
+    grid-area: img2;
+    background-image: url("img/img2.jpg")
+}
+
+#gallery .DrinkCat {
+    grid-area: img3;
+    background-image: url("img/img3.jpg")
+}
+
+#gallery .quaso {
+    grid-area: img4;
+    background-image: url("img/img4.jpg")
+}
+
+#gallery .creepyVR {
+    grid-area: img5;
+    background-image: url("img/img5.jpg")
+}
+
+#gallery .shuXjuwaVR {
+    grid-area: img6;
+    background-image: url("img/img6.jpg")
+}
+
+#gallery .tomatoJuwaShu{
+    grid-area: img7;
+    background-image: url("img/img7.jpg")
+}
+
+#gallery .getTrolled {
+    grid-area: img8;
+    background-image: url("img/img8.jpg")
+}
+
+#gallery .shrek {
+    grid-area: img9;
+    background-image: url("img/img9.jpg")
+}
+
+#gallery .gato {
+    grid-area: img10;
+    background-image: url("img/img10.jpg")
+}
+
+#gallery .muck {
+    grid-area: img11;
+    background-image: url("img/img11.jpg")
+}
+
+#gallery .pet {
+    grid-area: img12;
+    background-image: url("img/img12.jpg")
+}
+
+
+/* Gallery image titles*/
+
+.gallery-img div {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(124, 0, 112);
+    transition: 1000ms;
+    transition-delay: 50ms;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+.gallery-img a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.gallery-img div:hover {
+   
+    opacity: 0.8;
+    transition: all ease-in-out 100ms;
+    border-radius: 100px;
+}
+
+/* popup */
+
+.img-window {
+    width: 100vw;;
+    height: 100vh;
+    background-color: #554357cc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1003;
+
+}
+
+.img-window img {
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+/* NEXT IMAGE STYLING */
+
+.img-btn-next {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: hsl(219, 68%, 69%);
+    position: fixed;
+    top: 48vh;
+    right: 23vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 70ms;
+    z-index: 1005;
+
+}
+.img-btn-next:hover {
+    opacity: 0.8;
+
+}
+
+.img-btn-prev {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: hsl(219, 68%, 69%);
+    position: fixed;
+    top: 48vh;
+    left: 23vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 70ms;
+    z-index: 1005;
+
+}
+.img-btn-prev:hover {
+    opacity: 0.8;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  
+    #gallery {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      grid-row-gap: 20px; 
+    }
+  
+    #gallery .gallery-img {
+      width: 100%; 
+      height: auto; 
+      margin-left: 0; 
+    }
+  
+    .gallery-img div {
+      font-size: 16px; 
+    }
+  
+    .img-btn-next,
+    .img-btn-prev {
+      font-size: 14px; 
+      padding: 4px 8px;
+    }
+  
+   
+  }

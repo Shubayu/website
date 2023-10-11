@@ -1,0 +1,12 @@
+.cursor-blur {
+    position: fixed;
+    width: 200px; 
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    border-radius: 50%;
+    pointer-events: none; 
+    transform: translate(-50%, -50%);
+    filter: blur(60px); 
+    transition: all 0.3s ease-out; 
+    z-index: 1002;
+}

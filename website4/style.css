@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header
+{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.137);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo
+{
+    position: relative;
+    left: -30px;
+}
+header .logo-text
+{
+    font-size: 2.2em;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+    
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover
+{
+    background: rgba(177, 236, 254, 0.4);
+    color: #2b1055;
+}
+
+.list
+{
+    display: flex;
+    justify-content: space-between;   
+}
+.list-items a
+{
+    color: rgba(177, 236, 254, 1.0);
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    transition: 0.4s;
+}
+.list-items a:hover
+{
+    color: rgba(177, 236, 254, 1.0);
+}
+.section1
+{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    scale: 1;
+    justify-content: center;
+    align-items: center;
+}
+.section1::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #5e3c09c7, transparent);
+    z-index: 1000;
+}
+.section1 #bgp
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#img1
+{
+    position: relative;
+    top: 125px;
+    left: 435px;
+    border-radius: 10px;
+    box-shadow: #000000d2;
+}
+#img2
+{
+    position: relative;
+    top: 49px;
+    left: 590px;
+    border-radius: 10px;
+    box-shadow: #000000d2;
+}
+#img3
+{
+    position: relative;
+    top: 61px;
+    left: 435px;
+    border-radius: 10px;
+    box-shadow: #000000d2;
+}
+#img4
+{
+    position: relative;
+    top: -15px;
+    left: 590px;
+    border-radius: 10px;
+    box-shadow: #000000d2;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameRoom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="audio.css">
+</head>
+<body>
+    
+    <header>  
+    <div class="logo">
+      <span class="logo-text"><i style="margin-right: 0.1em"></i> 
+      <span style="color: rgb(254, 204, 219); font-size: 1.1em; font-family: s, sans-serif; font-weight: bold; -webkit-text-stroke: 0.5px black; ">JubBub</span>
+      <span style="color: rgb(241, 241, 163); font-size: 1.1em; font-family: s, sans-serif; font-weight: bold; -webkit-text-stroke: 0.5px black;">-</span>
+      <span style="color: rgb(177, 236, 254); font-size: 1.1em; font-family: s, sans-serif; font-weight: bold; -webkit-text-stroke: 0.5px black;">Gaming Room</span>
+  </div>
+
+  <div class="menubar">
+      <ul class="list">
+          <li class="list-items"><a href="../website/index.html">Home Page</a></li>
+          <li class="list-items"><a href="../website2/index.html">eepy Time</a></li>
+          <li class="list-items"><a href="../website3/index.html">Special Moments</a></li>
+      </ul>
+  </div>
+</header>
+
+<section class="section1">
+    <img src="img/room3.jpg" id="bgp">
+    <audio id="audioPlayer" src="audio/nightTheme.mp3" loop></audio>
+        <div id="audioControls">
+        <button id="toggleButton" class="play">
+            <span id="toggleText">♫</span>
+        </button>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5"></div>        
+        <div class="games">
+            <li class="list-items1"><a href="../retrofight/index.html" target="_blank"><img src="img/SF1.png" width="110px" height="70px" id="img1"></a></li>
+            <li class="list-items1"><a href="../fightingGame/index.html" target="_blank"><img src="img/1o1.png" width="110px" height="70px" id="img2"></a></li>
+            <li class="list-items1"><a href="../gaem/juwagame.html" target="_blank"><img src="img/quaso.png" width="110px" height="70px" id="img3"></a></li>
+            <li class="list-items1"><a href="../JuwaBdayGame/index.html" target="_blank"><img src="img/juwamon.png" width="110px" height="70px" id="img4"></a></li>
+        
+        </div>
+</section>
+
+
+
+
+
+
+    <script src="index.js"></script>
+    <script src="audio.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="stylesheet" type="text/css" href="audio.css">
+    <link rel="stylesheet" type="text/css" href="blur.css">
+</head>
+<body>
+   
+    <a id="top"></a>
+    
+    <header>  
+      <div class="logo">
+        <span class="logo-text"><i style="margin-right: 0.1em"></i> 
+        <span style="color: rgb(254, 204, 219); font-size: 1.1em; font-family: s, sans-serif; font-weight: bold; -webkit-text-stroke: 0.5px black; ">The Juwub</span>
+        <span style="color: rgb(241, 241, 163); font-size: 1.1em; font-family: s, sans-serif; font-weight: bold; -webkit-text-stroke: 0.5px black;">&</span>
+        <span style="color: rgb(177, 236, 254); font-size: 1.1em; font-family: s, sans-serif; font-weight: bold; -webkit-text-stroke: 0.5px black;">Shubub Club</span>
+    </div>
+
+    <div class="menubar">
+        <ul class="list">
+            <li class="list-items"><a href="../website2/index.html">eepy Time</a></li>
+            <li class="list-items"><a href="../website3/index.html">Special Moments</a></li>
+            <li class="list-items"><a href="../website4/index.html">Games</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<section
+ class="section1">
+    <img src="./img/JuwaOverlayBOTTOM.png" id="bgp">
+    <img src="./img/stars.png" id="stars1" class="scrolling-stars">
+    <img src="./img/stars.png" id="stars2" class="scrolling-stars">
+    <img src="./img/UwUyoru_8.png" id="juwa">
+    <img src="./img/shu.png" id="shu">
+    <h2 id="text">welcome</h2>
+    
+
+    <audio id="audioPlayer" src="audio/cuteBgm.mp3" loop></audio>
+        <div id="audioControls">
+        <button id="toggleButton" class="play">
+            <span id="toggleText">♫</span>
+        </button>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+</div>
+
+
+<div class="arrow-container">
+    <div id="arro" class="arrow"></div>
+    <div id="arro2" class="arrow2"></div>
+</div>
+
+
+</section>
+
+
+<section 
+id="gallery" 
+class="section2">
+   
+   <div class="gallery-img shububb">
+       <div><a href="#">Shubub my beloved</a></div>
+   </div>
+
+   <div class="gallery-img ShuJuwa">
+       <div><a href="#">Juwbub bub jubub</a></div>
+   </div>
+
+   <div class="gallery-img DrinkCat">
+       <div><a href="#">shhhlup shhlup</a></div>
+   </div>
+
+   <div class="gallery-img quaso">
+       <div><a href="#">quaso</a></div>
+   </div>
+
+   <div class="gallery-img creepyVR">
+       <div><a href="#">VR Horror</a></div>
+   </div>
+
+   <div class="gallery-img shuXjuwaVR">
+       <div><a href="#">vr couple goals</a></div>
+   </div>
+
+   <div class="gallery-img tomatoJuwaShu">
+       <div><a href="#">cosplay time</a></div>
+   </div>
+
+   <div class="gallery-img getTrolled">
+       <div><a href="#">get trolled bubshub</a></div>
+   </div>
+
+   <div class="gallery-img shrek">
+     <div><a href="#">sherk in the vr chat</a></div>
+   </div>
+
+   <div class="gallery-img gato">
+     <div><a href="#">gato a block</a></div>
+   </div>
+
+   <div class="gallery-img muck">
+     <div><a href="#">MUCK</a></div>
+   </div>
+
+   <div class="gallery-img pet">
+     <div><a href="#">Juwpet. oh so silly</a></div>
+   </div>
+
+</section>
+
+
+  <section
+   class="section3">
+    <img src="./img/stars.png" id="stars3" class="movingStar">
+    <img src="./img/stars.png" id="stars4" class="movingStar">
+    <img src="./img/UwUyoru_9.png" id="juwa2">
+    <img src="./img/shu.png" id="shu2">
+
+    <a href="#top" id="back-to-top-button">Back to Top</a>
+</section>
+
+<script> 
+    document.addEventListener("DOMContentLoaded", function () {
+        let text = document.getElementById("text")
+        let juwa = document.getElementById("juwa")
+        let shu = document.getElementById("shu")
+
+        let shu2 = document.getElementById("shu2")
+        let juwa2 = document.getElementById("juwa2")
+
+        let stars1 = document.getElementById("stars1")
+        let stars2 = document.getElementById("stars2")
+
+        let stars3 = document.getElementById("stars3")
+        let stars4 = document.getElementById("stars4")
+
+        let btn = document.getElementById("btn")
+        let header = document.querySelector("header")
+        
+        window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+            
+    //  stars1.style.left = value * 0.25 + "px";
+    //  stars2.style.left = value * 0.25 + "px";
+
+    //  stars3.style.left = value * 0.25 + "px";
+    //  stars4.style.left = value * 0.25 + "px";
+
+        text.style.marginTop = value * 2.0 + "px";
+
+        juwa.style.marginLeft = value * 2.5 + "px";
+        juwa.style.marginTop = value * 0.9 + "px";
+
+        shu.style.marginLeft = -value * 2.5 + "px";
+        shu.style.marginTop = value * 0.9 + "px";
+
+        juwa2.style.marginLeft = -value * 0.2 + "px";
+        juwa2.style.marginTop = value * 0.2 + "px";
+
+        shu2.style.marginLeft = value * 0.2 + "px";
+        shu2.style.marginTop = value * 0.2 + "px";
+
+        header.style.top = value * 0.4 + "px";
+    });
+});
+</script>
+
+
+<script src="bilder.js"></script>
+<script src="audio.js"></script>
+<script src="blur.js"></script>
+        
+
+<div class="cursor-blur"></div>
+
+</body>
+</html>
